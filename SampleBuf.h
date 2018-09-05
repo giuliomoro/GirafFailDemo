@@ -59,7 +59,7 @@ public:
 private:
 	// private libsndfile wrappers
     int getSamples(const char* file, float *buf, int channel, int startFrame, int endFrame);
-	SNDFILE *sndfile ;
+	SNDFILE *sndfile = NULL;
 	SF_INFO sfinfo ;
 };
 
